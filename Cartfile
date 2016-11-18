@@ -1,2 +1,2 @@
-github "Quick/Quick"
-github "sharplet/Regex" ~> 0.2
+github "Quick/Quick" ~> 0.10.0
+github "sharplet/Regex" "f61a4aa381b1836fbeb5c41f575dcdd8b6033cbf"
