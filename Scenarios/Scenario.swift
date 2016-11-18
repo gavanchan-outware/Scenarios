@@ -25,11 +25,13 @@ open class Scenario: Preparable, Actionable {
     self.commitFunc = commit
   }
 
+  @discardableResult
   public func Given(_ description: String, file: String = #file, line: UInt = #line) -> Prepared {
     addStep(description, file: file, line: line)
     return Prepared(self)
   }
 
+  @discardableResult
   public func When(_ description: String, file: String = #file, line: UInt = #line) -> Actioned {
     addStep(description, file: file, line: line)
     return Actioned(self)
